@@ -1,0 +1,96 @@
+engineering-resource-manager/
+├─ backend/
+│  ├─ config/
+│  │  └─ db.js
+│  ├─ controllers/
+│  │  ├─ assignmentController.js
+│  │  ├─ authController.js
+│  │  ├─ engineerController.js
+│  │  ├─ metaController.js
+│  │  └─ projectController.js
+│  ├─ middleware/
+│  │  └─ authMiddleware.js
+│  ├─ models/
+│  │  ├─ Assignment.js
+│  │  ├─ Project.js
+│  │  └─ User.js
+│  ├─ routes/
+│  │  ├─ assignments.js
+│  │  ├─ auth.js
+│  │  ├─ engineers.js
+│  │  ├─ meta.js
+│  │  └─ projects.js
+│  ├─ seed/
+│  │  └─ seed.js
+│  ├─ .env
+│  ├─ package-lock.json
+│  ├─ package.json
+│  ├─ README.md
+│  └─ server.js
+├─ frontend/
+│  ├─ public/
+│  │  └─ vite.svg
+│  ├─ src/
+│  │  ├─ assets/
+│  │  │  └─ react.svg
+│  │  ├─ components/
+│  │  │  ├─ ui/
+│  │  │  │  ├─ badge.tsx
+│  │  │  │  ├─ button-variants.ts
+│  │  │  │  ├─ button.tsx
+│  │  │  │  ├─ card.tsx
+│  │  │  │  ├─ dropdown-menu.tsx
+│  │  │  │  ├─ input.tsx
+│  │  │  │  ├─ label.tsx
+│  │  │  │  ├─ navigation-menu.tsx
+│  │  │  │  └─ select.tsx
+│  │  │  ├─ CapacityBar.tsx
+│  │  │  ├─ Layout.tsx
+│  │  │  ├─ Nav.tsx
+│  │  │  └─ SkillTags.tsx
+│  │  ├─ lib/
+│  │  │  ├─ axios.ts
+│  │  │  └─ utils.ts
+│  │  ├─ pages/
+│  │  │  ├─ auth/
+│  │  │  │  ├─ Login.tsx
+│  │  │  │  └─ Register.tsx
+│  │  │  ├─ engineer/
+│  │  │  │  ├─ Dashboard.tsx
+│  │  │  │  ├─ MyAssignments.tsx
+│  │  │  │  └─ Profile.tsx
+│  │  │  └─ manager/
+│  │  │     ├─ Analytics.tsx
+│  │  │     ├─ AssignmentTimeline.tsx
+│  │  │     ├─ CreateAssignment.tsx
+│  │  │     ├─ Dashboard.tsx
+│  │  │     ├─ Projects.tsx
+│  │  │     ├─ SkillGap.tsx
+│  │  │     ├─ TeamOverview.tsx
+│  │  │     └─ ViewAssignments.tsx
+│  │  ├─ routes/
+│  │  │  └─ AppRoutes.tsx
+│  │  ├─ store/
+│  │  │  ├─ assignmentStore.ts
+│  │  │  ├─ authStore.ts
+│  │  │  ├─ uiStore.ts
+│  │  │  └─ userStore.ts
+│  │  ├─ utils/
+│  │  │  └─ date.ts
+│  │  ├─ App.css
+│  │  ├─ index.css
+│  │  ├─ main.tsx
+│  │  └─ vite-env.d.ts
+│  ├─ .gitignore
+│  ├─ components.json
+│  ├─ eslint.config.js
+│  ├─ index.html
+│  ├─ package-lock.json
+│  ├─ package.json
+│  ├─ README.md
+│  ├─ tailwind.config.ts
+│  ├─ tsconfig.app.json
+│  ├─ tsconfig.json
+│  ├─ tsconfig.node.json
+│  └─ vite.config.ts
+└─ file_tree.txt
