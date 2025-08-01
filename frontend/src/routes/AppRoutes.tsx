@@ -16,7 +16,7 @@ import MyAssignments from '../pages/engineer/MyAssignments'
 import Profile from '../pages/engineer/Profile'
 
 import { useAuthStore } from '../store/authStore'
-import '@/App.css'
+// import '@/App.css'
 import Register from '../pages/auth/Register'
 
 // 🔐 Role-based route wrapper

@@ -21,6 +21,17 @@ exports.createAssignment = async (req, res) => {
       return res.status(400).json({ msg: "Invalid engineerId" });
     }
 
+    // Check if engineer's total allocation exceeds 100%
+    const existingAssignments = await Assignment.find({ engineerId });
+    const totalAllocation = existingAssignments.reduce(
+      (sum, assignment) => sum + assignment.allocationPercentage,
+      0
+    );
+    if (totalAllocation + allocationPercentage > 100) {
+      console.log("❌ Engineer allocation exceeds 100%"); 
+      return res.status(400).json({ msg: "Engineer allocation exceeds 100%" });
+    }
+
     const newAssignment = new Assignment({
       projectId,
       engineerId,
